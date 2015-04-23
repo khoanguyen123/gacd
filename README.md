@@ -53,9 +53,9 @@ The "run_analysis.R" performs the following tasks:
 
 3. Merge TEST and TRAINING dataset into one data frame via rbind
 
-4. Extract only the measurements on the mean and standard deviation for each row using select{dplyr} function
+4. Extract only the measurements on the mean and standard deviation for each row using select{dplyr} function on all columns matching "std" or "mean" 
 
-5. Create a new dataset (hopefully tidy) with the average of each variable (e.g. each of the means and stds above) per activity per participant
+5. Create a new dataset (hopefully tidy) with the average of each variable (i.e. each of the means and stds above) per activity per participant
 
 6. The new dataset is written to a file called "result.txt" in current directory
 

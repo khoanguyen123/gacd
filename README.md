@@ -45,15 +45,20 @@ The "run_analysis.R" performs the following tasks:
   
   2. So, need to read "subject_test.txt". Each row identifies a subject whose observation is in the matching row number in "X_test.txt"
   
-  3. 
+  3. Similarly, "y_test.txt" identifies an activity by number (e.g. 1 = WALKING, 2 = WALKING_UPSTAIRS, ...). So, we need to map them to meaningful names using "activity_labels.txt"
+  
+  4. Combine them all (via cbind) into a single TEST dataset
   
 2. Do the same with TRAINING dataset
+
 3. Merge TEST and TRAINING dataset into one data frame via rbind
 
-Merges the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement. 
-Uses descriptive activity names to name the activities in the data set
-Appropriately labels the data set with descriptive variable names. 
-From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+4. Extract only the measurements on the mean and standard deviation for each row using select{dplyr} function
+
+5. Create a new dataset (hopefully tidy) with the average of each variable (e.g. each of the means and stds above) per activity per participant
+
+6. The new dataset is written to a file called "result.txt" in current directory
+
+
 
 

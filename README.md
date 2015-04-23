@@ -38,9 +38,13 @@ There are more files, but we don't use them in this assignment.
 ### Script description
 
 The "run_analysis.R" performs the following tasks:
+
 1. Read TEST dataset
+
   1. Read "X_test.txt". Each row is an observation, however the subject and activity columns are missing
+  
   2. So, need to read "subject_test.txt". Each row identifies a subject whose observation is in the matching row number in "X_test.txt"
+  
   3. 
   
 2. Do the same with TRAINING dataset

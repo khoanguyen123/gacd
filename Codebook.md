@@ -8,7 +8,7 @@ The output dataset contains the mean for various measurements per subject per ac
 
 - Activity: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
 
-- The rest of the columns are the mean of the measurements. 
+- The rest of the columns are the <strong>mean</strong> of the measurements. 
 
   The measurements' names have the following convention: (t|f)(measurement)[X|Y|Z] |, where
   

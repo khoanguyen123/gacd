@@ -24,6 +24,8 @@ The output dataset contains the mean for various measurements per subject per ac
 	
 	... and so on
 	
+  - X|Y|Z: if present, indicates the measurement in the X, Y, or Z direction
+	
 - Below is the list of all the columns:
 
  [1] "Subject"                      "Activity"                    

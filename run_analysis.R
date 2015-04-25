@@ -57,9 +57,10 @@ tbl <- tbl_df(udf)
 rm(udf)
 
 xtb <- tbl %>% 
-        select(Subject, Activity, contains("std"), contains("mean")) %>%
+        select(Subject, Activity, contains("std", ignore.case = FALSE), 
+               contains("mean", ignore.case = FALSE)) %>%
         group_by(Subject, Activity) %>%
         summarise_each(funs(mean(., na.rm = TRUE)), matches("std|mean"))
 
 print(xtb)
-write.table(xtb, file = "result.txt")
+write.table(xtb, file = "result.txt", row.name = FALSE)
